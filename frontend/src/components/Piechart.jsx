@@ -30,8 +30,8 @@ const PieChart = ({ selectedMonth }) => {
     const fetchPieChart = async () => {
       try {
         const apiUrl = selectedMonth
-          ? `http://localhost:1234/api/piechart/${selectedMonth}`
-          : `http://localhost:1234/api/piechart`;
+          ? `https://roxiler-systems-task.onrender.com/api/piechart/${selectedMonth}`
+          : `https://roxiler-systems-task.onrender.com/api/piechart`;
 
         const response = await axios.get(apiUrl);
         const data = response.data;

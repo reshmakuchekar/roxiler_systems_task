@@ -13,8 +13,8 @@ const Statistics = ({ selectedMonth }) => {
     const fetchStatistics = async () => {
       try {
         const url = selectedMonth
-          ? `http://localhost:1234/api/statistics/${selectedMonth}`
-          : `http://localhost:1234/api/statistics`;
+          ? `https://roxiler-systems-task.onrender.com/api/statistics/${selectedMonth}`
+          : `https://roxiler-systems-task.onrender.com/api/statistics`;
 
         console.log(`Fetching statistics from: ${url}`);
         const response = await axios.get(url);

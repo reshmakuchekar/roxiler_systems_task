@@ -17,7 +17,7 @@ const TransactionsTable = ({ selectedMonth, searchQuery, page, perPage, setPage 
         if (selectedMonth) params.month = selectedMonth;
         if (searchQuery) params.search = searchQuery;
 
-        const response = await axios.get('http://localhost:1234/api/allorders', { params });
+        const response = await axios.get('https://roxiler-systems-task.onrender.com/api/allorders', { params });
 
         setTransactions(response.data.orders);
         setTotalPages(response.data.totalPages);
