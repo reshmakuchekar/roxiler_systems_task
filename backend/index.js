@@ -17,7 +17,7 @@ mongoose.connect(url)
   });
 
 app.use(cors({
-  origin:'http://localhost:3000',
+  origin:'https://adminpanel-9pue.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
 }))
 app.use('/', userroute);
